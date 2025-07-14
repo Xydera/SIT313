@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(128, 128, 128, 0.582);
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+
+  text-align: left;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+  margin: 0;
+}
+.nav-menu li {
+  margin: 0 1.5rem;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.header-image {
+  background: url('images/header.jpg') no-repeat center center/cover;
+  height: 300px;
+  position: relative;
+}
+.overlay-text {
+  position: absolute;
+  bottom: 45%;
+  left: 45%;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 20px;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.header-image:hover .overlay-text {
+  opacity: 1;
+}
+
+.profile-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.job-title {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.projects-section {
+  padding: 2rem;
+}
+.projects-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-card {
+  background: white;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.gallery-section {
+  padding: 2rem;
+}
+.gallery-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #eee;
+}
